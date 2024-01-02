@@ -30,13 +30,16 @@ async function webCat(url) {
 
 }
 
+
+
 function controller(pathOrFile) {
   try  {
-    new URL(argv[2])
-  } catch (TypeError) {
-
-
+   const url = new URL(pathOrFile);
+  } catch (err) {
+    cat(pathOrFile);
   }
+
+
 
 }
 
